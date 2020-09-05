@@ -17,6 +17,8 @@
 		0929D5762503C04A00CC8A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5742503C04A00CC8A8F /* Main.storyboard */; };
 		0929D5782503C04A00CC8A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5772503C04A00CC8A8F /* Assets.xcassets */; };
 		0929D57B2503C04A00CC8A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5792503C04A00CC8A8F /* LaunchScreen.storyboard */; };
+		0929D5812503C1B700CC8A8F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5802503C1B700CC8A8F /* View.swift */; };
+		0929D5832503C26E00CC8A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5822503C26E00CC8A8F /* ViewController.swift */; };
 		0946DD0E2503B82700D2B2FA /* RBToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0946DD0C2503B82700D2B2FA /* RBToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		0929D5772503C04A00CC8A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0929D57A2503C04A00CC8A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0929D57C2503C04A00CC8A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0929D5802503C1B700CC8A8F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		0929D5822503C26E00CC8A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0946DD092503B82700D2B2FA /* RBToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0946DD0C2503B82700D2B2FA /* RBToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBToolkit.h; sourceTree = "<group>"; };
 		0946DD0D2503B82700D2B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		0929D5652503BEC100CC8A8F /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				0929D5802503C1B700CC8A8F /* View.swift */,
+				0929D5822503C26E00CC8A8F /* ViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -239,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0929D5832503C26E00CC8A8F /* ViewController.swift in Sources */,
 				0929D5602503BCA500CC8A8F /* CGFloat+DynamicDimension.swift in Sources */,
 				0929D5612503BCA500CC8A8F /* UIImage+ScalingExtension.swift in Sources */,
+				0929D5812503C1B700CC8A8F /* View.swift in Sources */,
 				0929D5632503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift in Sources */,
 				0929D5622503BCA500CC8A8F /* UIView+SubviewExtension.swift in Sources */,
 			);
