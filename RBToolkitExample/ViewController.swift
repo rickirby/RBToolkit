@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import RBToolkit
 
 class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
+		title = "Example"
+		setNavigationBarColor(backgroundColor: .orange, textColor: .white, tintColor: .white)
 	}
 
 
