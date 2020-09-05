@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MyViewController.swift
 //  RBToolkitExample
 //
 //  Created by Ricki Bin Yamin on 05/09/20.
@@ -9,7 +9,7 @@
 import UIKit
 import RBToolkit
 
-class ViewController: UIViewController {
+class MyViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()

@@ -13,12 +13,14 @@
 		0929D5632503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D55F2503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift */; };
 		0929D56F2503C04A00CC8A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D56E2503C04A00CC8A8F /* AppDelegate.swift */; };
 		0929D5712503C04A00CC8A8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5702503C04A00CC8A8F /* SceneDelegate.swift */; };
-		0929D5732503C04A00CC8A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5722503C04A00CC8A8F /* ViewController.swift */; };
+		0929D5732503C04A00CC8A8F /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5722503C04A00CC8A8F /* MyViewController.swift */; };
 		0929D5762503C04A00CC8A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5742503C04A00CC8A8F /* Main.storyboard */; };
 		0929D5782503C04A00CC8A8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5772503C04A00CC8A8F /* Assets.xcassets */; };
 		0929D57B2503C04A00CC8A8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0929D5792503C04A00CC8A8F /* LaunchScreen.storyboard */; };
 		0929D5812503C1B700CC8A8F /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5802503C1B700CC8A8F /* View.swift */; };
 		0929D5832503C26E00CC8A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5822503C26E00CC8A8F /* ViewController.swift */; };
+		0929D5852503C44800CC8A8F /* ProgrammaticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5842503C44800CC8A8F /* ProgrammaticalView.swift */; };
+		0929D5872503C4C800CC8A8F /* ProgrammaticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5862503C4C800CC8A8F /* ProgrammaticalViewController.swift */; };
 		0946DD0E2503B82700D2B2FA /* RBToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0946DD0C2503B82700D2B2FA /* RBToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,13 +32,15 @@
 		0929D56C2503C04A00CC8A8F /* RBToolkitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RBToolkitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0929D56E2503C04A00CC8A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0929D5702503C04A00CC8A8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0929D5722503C04A00CC8A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0929D5722503C04A00CC8A8F /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		0929D5752503C04A00CC8A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0929D5772503C04A00CC8A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0929D57A2503C04A00CC8A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0929D57C2503C04A00CC8A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0929D5802503C1B700CC8A8F /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		0929D5822503C26E00CC8A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0929D5842503C44800CC8A8F /* ProgrammaticalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticalView.swift; sourceTree = "<group>"; };
+		0929D5862503C4C800CC8A8F /* ProgrammaticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticalViewController.swift; sourceTree = "<group>"; };
 		0946DD092503B82700D2B2FA /* RBToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0946DD0C2503B82700D2B2FA /* RBToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBToolkit.h; sourceTree = "<group>"; };
 		0946DD0D2503B82700D2B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 			children = (
 				0929D56E2503C04A00CC8A8F /* AppDelegate.swift */,
 				0929D5702503C04A00CC8A8F /* SceneDelegate.swift */,
-				0929D5722503C04A00CC8A8F /* ViewController.swift */,
+				0929D5842503C44800CC8A8F /* ProgrammaticalView.swift */,
+				0929D5862503C4C800CC8A8F /* ProgrammaticalViewController.swift */,
+				0929D5722503C04A00CC8A8F /* MyViewController.swift */,
 				0929D5742503C04A00CC8A8F /* Main.storyboard */,
 				0929D5772503C04A00CC8A8F /* Assets.xcassets */,
 				0929D5792503C04A00CC8A8F /* LaunchScreen.storyboard */,
@@ -235,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0929D5732503C04A00CC8A8F /* ViewController.swift in Sources */,
+				0929D5732503C04A00CC8A8F /* MyViewController.swift in Sources */,
+				0929D5852503C44800CC8A8F /* ProgrammaticalView.swift in Sources */,
 				0929D56F2503C04A00CC8A8F /* AppDelegate.swift in Sources */,
 				0929D5712503C04A00CC8A8F /* SceneDelegate.swift in Sources */,
+				0929D5872503C4C800CC8A8F /* ProgrammaticalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
