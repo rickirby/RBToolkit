@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0929D5602503BCA500CC8A8F /* CGFloat+DynamicDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D55C2503BCA500CC8A8F /* CGFloat+DynamicDimension.swift */; };
+		0929D5612503BCA500CC8A8F /* UIImage+ScalingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D55D2503BCA500CC8A8F /* UIImage+ScalingExtension.swift */; };
+		0929D5622503BCA500CC8A8F /* UIView+SubviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D55E2503BCA500CC8A8F /* UIView+SubviewExtension.swift */; };
+		0929D5632503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D55F2503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift */; };
 		0946DD0E2503B82700D2B2FA /* RBToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0946DD0C2503B82700D2B2FA /* RBToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0929D55C2503BCA500CC8A8F /* CGFloat+DynamicDimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+DynamicDimension.swift"; sourceTree = "<group>"; };
+		0929D55D2503BCA500CC8A8F /* UIImage+ScalingExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ScalingExtension.swift"; sourceTree = "<group>"; };
+		0929D55E2503BCA500CC8A8F /* UIView+SubviewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SubviewExtension.swift"; sourceTree = "<group>"; };
+		0929D55F2503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+NavigationBarExtension.swift"; sourceTree = "<group>"; };
 		0946DD092503B82700D2B2FA /* RBToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0946DD0C2503B82700D2B2FA /* RBToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBToolkit.h; sourceTree = "<group>"; };
 		0946DD0D2503B82700D2B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +35,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0929D5642503BEA300CC8A8F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0929D55C2503BCA500CC8A8F /* CGFloat+DynamicDimension.swift */,
+				0929D55D2503BCA500CC8A8F /* UIImage+ScalingExtension.swift */,
+				0929D55E2503BCA500CC8A8F /* UIView+SubviewExtension.swift */,
+				0929D55F2503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0929D5652503BEC100CC8A8F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0946DCFF2503B82700D2B2FA = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +74,8 @@
 			children = (
 				0946DD0C2503B82700D2B2FA /* RBToolkit.h */,
 				0946DD0D2503B82700D2B2FA /* Info.plist */,
+				0929D5652503BEC100CC8A8F /* Base */,
+				0929D5642503BEA300CC8A8F /* Extension */,
 			);
 			path = RBToolkit;
 			sourceTree = "<group>";
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					0946DD082503B82700D2B2FA = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0929D5602503BCA500CC8A8F /* CGFloat+DynamicDimension.swift in Sources */,
+				0929D5612503BCA500CC8A8F /* UIImage+ScalingExtension.swift in Sources */,
+				0929D5632503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift in Sources */,
+				0929D5622503BCA500CC8A8F /* UIView+SubviewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +293,7 @@
 		0946DD122503B82700D2B2FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6NMANHT3A2;
@@ -279,6 +313,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +322,7 @@
 		0946DD132503B82700D2B2FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6NMANHT3A2;
