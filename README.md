@@ -10,4 +10,4 @@ git "git@github.com:rickibin/RB_Toolkit_Core_iOS.git" == *version-number*
 Then "carthage update --use-ssh"
 
 ### Current version:
-1.0.0
+0.0.1
