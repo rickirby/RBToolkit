@@ -18,6 +18,10 @@ class MyViewController: UIViewController {
 		setNavigationBarColor(backgroundColor: .orange, textColor: .white, tintColor: .white)
 	}
 
-
+	@IBAction func buttonTapped(_ sender: UIButton) {
+		let vc = ProgrammaticalViewController()
+		navigationController?.pushViewController(vc, animated: true)
+	}
+	
 }
 
