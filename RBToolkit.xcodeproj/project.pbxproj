@@ -22,7 +22,6 @@
 		0929D5852503C44800CC8A8F /* ProgrammaticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5842503C44800CC8A8F /* ProgrammaticalView.swift */; };
 		0929D5872503C4C800CC8A8F /* ProgrammaticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5862503C4C800CC8A8F /* ProgrammaticalViewController.swift */; };
 		0946DD0E2503B82700D2B2FA /* RBToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0946DD0C2503B82700D2B2FA /* RBToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCE3B97825163ED500FAA337 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCE3B97725163ED400FAA337 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +44,6 @@
 		0946DD092503B82700D2B2FA /* RBToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0946DD0C2503B82700D2B2FA /* RBToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBToolkit.h; sourceTree = "<group>"; };
 		0946DD0D2503B82700D2B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCE3B97725163ED400FAA337 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +103,6 @@
 		0946DCFF2503B82700D2B2FA = {
 			isa = PBXGroup;
 			children = (
-				DCE3B97725163ED400FAA337 /* README.md */,
 				0946DD0B2503B82700D2B2FA /* RBToolkit */,
 				0929D56D2503C04A00CC8A8F /* RBToolkitExample */,
 				0946DD0A2503B82700D2B2FA /* Products */,
@@ -234,7 +231,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE3B97825163ED500FAA337 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
