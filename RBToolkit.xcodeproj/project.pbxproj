@@ -22,6 +22,7 @@
 		0929D5852503C44800CC8A8F /* ProgrammaticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5842503C44800CC8A8F /* ProgrammaticalView.swift */; };
 		0929D5872503C4C800CC8A8F /* ProgrammaticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0929D5862503C4C800CC8A8F /* ProgrammaticalViewController.swift */; };
 		0946DD0E2503B82700D2B2FA /* RBToolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0946DD0C2503B82700D2B2FA /* RBToolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCE3B97625163D2300FAA337 /* UIView+FindVCExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE3B97525163D2300FAA337 /* UIView+FindVCExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		0946DD092503B82700D2B2FA /* RBToolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RBToolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0946DD0C2503B82700D2B2FA /* RBToolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBToolkit.h; sourceTree = "<group>"; };
 		0946DD0D2503B82700D2B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE3B97525163D2300FAA337 /* UIView+FindVCExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FindVCExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				0929D55C2503BCA500CC8A8F /* CGFloat+DynamicDimension.swift */,
 				0929D55D2503BCA500CC8A8F /* UIImage+ScalingExtension.swift */,
 				0929D55E2503BCA500CC8A8F /* UIView+SubviewExtension.swift */,
+				DCE3B97525163D2300FAA337 /* UIView+FindVCExtension.swift */,
 				0929D55F2503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift */,
 			);
 			path = Extension;
@@ -256,6 +259,7 @@
 				0929D5832503C26E00CC8A8F /* ViewController.swift in Sources */,
 				0929D5602503BCA500CC8A8F /* CGFloat+DynamicDimension.swift in Sources */,
 				0929D5612503BCA500CC8A8F /* UIImage+ScalingExtension.swift in Sources */,
+				DCE3B97625163D2300FAA337 /* UIView+FindVCExtension.swift in Sources */,
 				0929D5812503C1B700CC8A8F /* View.swift in Sources */,
 				0929D5632503BCA500CC8A8F /* UIViewController+NavigationBarExtension.swift in Sources */,
 				0929D5622503BCA500CC8A8F /* UIView+SubviewExtension.swift in Sources */,
