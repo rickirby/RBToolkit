@@ -10,32 +10,23 @@ import UIKit
 
 public extension UIImage {
 	
-	func createThumbnail(_ maxPixelSize: Int) -> UIImage? {
+	func createThumbnail(withSize size: CGSize) -> UIImage? {
+		let renderer = UIGraphicsImageRenderer(size: size)
 		
-		var result: UIImage? = nil
-		
-		if let imageData = self.pngData(){
-			
-			let options = [
-				kCGImageSourceCreateThumbnailWithTransform: true,
-				kCGImageSourceCreateThumbnailFromImageAlways: true,
-				kCGImageSourceThumbnailMaxPixelSize: maxPixelSize] as CFDictionary
-			
-			imageData.withUnsafeBytes { ptr in
-				
-				guard let bytes = ptr.baseAddress?.assumingMemoryBound(to: UInt8.self) else { return }
-				
-				if let cfData = CFDataCreate(kCFAllocatorDefault, bytes, imageData.count){
-					
-					let source = CGImageSourceCreateWithData(cfData, nil)!
-					let imageReference = CGImageSourceCreateThumbnailAtIndex(source, 0, options)!
-					let thumbnail = UIImage(cgImage: imageReference)
-					
-					result = thumbnail
-				}
-			}
+		return renderer.image { context in
+			self.draw(in: CGRect(origin: .zero, size: size))
 		}
+	}
+	
+	func defaultThumbnail() -> UIImage? {
+		let imageWidth = self.size.width
+		let imageHeight = self.size.height
 		
-		return result
+		let widthRatio = imageWidth / 200
+		let heightRatio = imageHeight / 200
+		
+		let selectedRatio = min(widthRatio, heightRatio)
+		
+		return createThumbnail(withSize: CGSize(width: imageWidth / selectedRatio, height: imageHeight / selectedRatio))
 	}
 }
