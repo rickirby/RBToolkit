@@ -8,7 +8,7 @@
 
 import UIKit
 
-private extension Notification {
+extension Notification {
 
 	var keyboardAnimationDuration: TimeInterval? {
 		(userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue
