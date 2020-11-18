@@ -10,8 +10,16 @@ import UIKit
 
 open class View: UIView {
 	
+	public let keyboardLayoutGuide = UILayoutGuide()
+	private(set) lazy var keyboardHeightConstraint = keyboardLayoutGuide.heightAnchor.constraint(equalToConstant: 0)
+	
+	public override static var requiresConstraintBasedLayout: Bool {
+		true
+	}
+	
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
+		configureKeyboardLayoutGuide()
 		setViews()
 	}
 	
@@ -27,4 +35,12 @@ open class View: UIView {
 	open func onViewDidDisappear() {}
 	open func onViewWillLayoutSubviews() {}
 	open func onViewDidLayoutSubviews() {}
+	
+	private func configureKeyboardLayoutGuide() {
+		addLayoutGuide(keyboardLayoutGuide)
+		NSLayoutConstraint.activate([
+			keyboardHeightConstraint,
+			keyboardLayoutGuide.bottomAnchor.constraint(equalTo: self.bottomAnchor)
+		])
+	}
 }
